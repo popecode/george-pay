@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import ActionCard from '@/components/ActionCard'
+import ActionCard from '@/components/landingComponents/ActionCard'
 
 export default {
     data() {

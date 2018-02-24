@@ -8,9 +8,11 @@
             align-center
             justify-center
             class="grey--text">
-            <h1 class="grey--text mb-2 display-1 text-xs-center">Insert Title Here</h1>
-            <div class="subheading mb-3 text-xs-center">This is some to describe the actual thing</div>
-            <v-btn dark large color="primary" @click.native="introduction = false">Get Started</v-btn>
+            <h1 class="grey--text text--darken-2 mb-2 display-2 text-xs-center">So you think you’ve been underpaid?</h1>
+            <div class="mb-3 text-xs-center text--darken-2 headline">
+              You’ve come to the right place. It's easy to get started!
+            </div>
+            <v-btn dark large color="primary" @click.native="introduction = false">Let's Go!</v-btn>
           </v-layout>
         </v-parallax>
       </section>
@@ -18,17 +20,63 @@
 
     <v-slide-y-transition mode="out-in" v-else>
         <v-stepper v-model="step_no" vertical>
+          <v-btn flat @click.native="introduction = true">Cancel</v-btn>
 
           <v-stepper-step step="1" :complete="step_no > 1">
             Select an app
             <small>Summarize if needed</small>
           </v-stepper-step>
           <v-stepper-content step="1">
-            <v-card color="grey lighten-1" class="mb-5" height="200px">
-              Some content goes here
-            </v-card>
-            <v-btn flat @click.native="introduction = true">Previous</v-btn>
-            <v-btn color="primary" @click.native="step_no = 2">Next</v-btn>
+            <!-- START -->
+            <v-flex xs12>
+                <v-container grid-list-xl>
+                  <v-layout row wrap>
+
+                    <v-flex xs6>
+                      <v-card class="elevation-0 transparent">
+                        <v-card-text class="text-xs-center">
+                          <v-icon x-large class="blue--text text--lighten-2">face</v-icon>
+                        </v-card-text>
+                        <v-card-title primary-title class="layout justify-center">
+                          <div class="headline">DIY</div>
+                        </v-card-title>
+                        <v-card-text>
+                          Try to work it out with your employer yourself.
+                          <p>Pros:</p>
+
+                          <ul>
+                            <li></li>
+                          </ul>
+
+                          <p>Cons:</p>
+                        </v-card-text>
+                        <v-card-actions>
+                          <v-btn color="primary" @click.native="step_no = 2">Start</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-flex>
+
+                    <v-flex xs6>
+                      <v-card class="elevation-0 transparent">
+                        <v-card-text class="text-xs-center">
+                          <v-icon x-large class="blue--text text--lighten-2">account_balance</v-icon>
+                        </v-card-text>
+                        <v-card-title primary-title class="layout justify-center">
+                          <div class="headline">Go to Court</div>
+                        </v-card-title>
+                        <v-card-text>
+                          If you can’t work it out with your employer you may need to go to court. There are a few things you need to consider first.
+                        </v-card-text>
+                        <v-card-actions>
+                          <v-btn color="primary" @click.native="step_no = 3">Start</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-flex>
+
+                  </v-layout>
+                </v-container>
+              </v-flex>
+            <!-- END -->
           </v-stepper-content>
 
           <v-stepper-step step="2" :complete="step_no > 2">Configure analytics for this app</v-stepper-step>

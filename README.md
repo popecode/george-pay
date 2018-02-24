@@ -1,8 +1,8 @@
 # georgepay
 Global Legal Hackathon 2018
 
-`cd App`
+`cd legal-app`
 
 `npm install`
 
-`npm run serve`
+`npm run dev`

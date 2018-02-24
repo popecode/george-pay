@@ -1,10 +1,19 @@
 <template>
   <v-container fluid>
     <v-slide-y-transition mode="out-in" v-if="introduction">
-      <div>
-        <p>This is introduction</p>
-        <v-btn color="primary" @click.native="introduction = false">Start</v-btn>
-      </div>
+      <section>
+        <v-parallax height="600">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="grey--text">
+            <h1 class="grey--text mb-2 display-1 text-xs-center">Insert Title Here</h1>
+            <div class="subheading mb-3 text-xs-center">This is some to describe the actual thing</div>
+            <v-btn dark large color="primary" @click.native="introduction = false">Get Started</v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
     </v-slide-y-transition>
 
     <v-slide-y-transition mode="out-in" v-else>

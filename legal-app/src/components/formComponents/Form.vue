@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import FormQuestion from '@/components/FormQuestion'
-import NextButton from '@/components/NextButton'
+import FormQuestion from '@/components/formComponents/FormQuestion'
+import NextButton from '@/components/formComponents/NextButton'
 
 export default {
     components: {

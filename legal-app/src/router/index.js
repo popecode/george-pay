@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Landing from '@/components/Landing'
-import Form from '@/components/Form'
+import Landing from '@/components/landingComponents/Landing'
+import Form from '@/components/formComponents/Form'
 
 Vue.use(Router)
 

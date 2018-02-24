@@ -1,7 +1,13 @@
 <template>
   <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      
+    <v-slide-y-transition mode="out-in" v-if="introduction">
+      <div>
+        <p>This is introduction</p>
+        <v-btn color="primary" @click.native="introduction = false">Start</v-btn>
+      </div>
+    </v-slide-y-transition>
+
+    <v-slide-y-transition mode="out-in" v-else>
         <v-stepper v-model="step_no" vertical>
 
           <v-stepper-step step="1" :complete="step_no > 1">
@@ -12,7 +18,7 @@
             <v-card color="grey lighten-1" class="mb-5" height="200px">
               Some content goes here
             </v-card>
-            <v-btn flat>Previous</v-btn>
+            <v-btn flat @click.native="introduction = true">Previous</v-btn>
             <v-btn color="primary" @click.native="step_no = 2">Next</v-btn>
           </v-stepper-content>
 
@@ -55,7 +61,8 @@
     data () {
       return {
         step_no: 1,
-        landing: true
+        landing: true,
+        introduction: true
       }
     },
     components: {

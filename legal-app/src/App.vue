@@ -26,7 +26,7 @@
 
     <v-toolbar app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <div class="logo"><img src="@/assets/lawbud-logo.png" alt="LawBud"></div>
       <v-spacer></v-spacer>
       <v-list-tile-avatar><img :src="avatar"></v-list-tile-avatar>
       <v-toolbar-title v-text="username"></v-toolbar-title>
@@ -69,6 +69,17 @@ export default {
   color: #42b983;
   font: verdana;
   font-weight: normal;
+}
+.logo {
+  height: 64px;
+  width: 150px;
+}
+
+/* resize images */
+.logo img {
+    width: 100%;
+    height: auto;
+    margin-top: 14px;
 }
 </style>
 

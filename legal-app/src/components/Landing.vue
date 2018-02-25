@@ -14,8 +14,11 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              
+              <p>Have a conversation with your employer to resolve the issue. We offer free advice that you can use to prepare.</p>
             </v-card-text>
+            <v-card-actions class="justify-center">
+              <v-btn color="primary">Get some advice</v-btn>
+            </v-card-actions>
           </v-card>
         </v-flex>
 
@@ -29,12 +32,16 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
+              <p>Have someone mediate a conversation with your employer to resolve the issue. We can recommend some mediators that can help you.</p>
               <div class="time-container">
                 <v-icon x-large class="grey--text text--darken-3">alarm</v-icon> 
                 <span class="time">Takes up to</span>
                 <span class="time actual-time">10 weeks</span>
               </div>
             </v-card-text>
+            <v-card-actions class="justify-center">
+              <v-btn color="primary">Find a mediator</v-btn>
+            </v-card-actions>
           </v-card>
         </v-flex>
 
@@ -48,6 +55,7 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
+              <p>Write a formal letter to your employer for them to respond to. Fill out an online form to generate a letter template.</p>
               <div class="time-container">
                 <v-icon x-large class="grey--text text--darken-3">alarm</v-icon> 
                 <span class="time">Take up to</span>

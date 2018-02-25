@@ -108,15 +108,17 @@
 
           <v-stepper-step step="2" :complete="step_no > 2">Next steps</v-stepper-step>
           <v-stepper-content step="2">
-            <Landing v-if="landing" :hideLanding="hideLanding"/>
-            <Form v-else />
-            <v-btn flat @click.native="step_no = 1">Previous</v-btn>
-            <v-btn color="primary" @click.native="step_no = 3">Next</v-btn>
+            <v-slide-y-transition mode="out-in" v-if="landing">
+              <Landing :hideLanding="hideLanding"/>
+            </v-slide-y-transition>
+            
+            <v-slide-y-transition mode="out-in" v-else>
+              <Form :showLanding="showLanding" />
+            </v-slide-y-transition>
           </v-stepper-content>
 
           <v-stepper-step step="3" :complete="step_no > 3">
-            Select an ad format and name ad unit
-            <small>Summarize if needed</small>
+            Going to court
           </v-stepper-step>
           <v-stepper-content step="3">
             <v-card color="grey lighten-1" class="mb-5" height="200px">
@@ -126,7 +128,10 @@
             <v-btn color="primary" @click.native="step_no = 4">Next</v-btn>
           </v-stepper-content>
 
-          <v-stepper-step step="4" :complete="step_no > 4">View setup instructions</v-stepper-step>
+          <v-stepper-step step="4" :complete="step_no > 4">
+            Preparing for court
+            <small>What to bring・What to wear・When to arrive・Courtroom virtual tour</small>
+          </v-stepper-step>
           <v-stepper-content step="4">
             <v-card color="grey lighten-1" class="mb-5" height="200px"></v-card>
             <v-btn flat @click.native="step_no = 3">Previous</v-btn>
@@ -160,6 +165,7 @@
         this.landing = false;
       },
       showLanding() {
+        console.warn('here');
         this.landing = true;
       }
     }

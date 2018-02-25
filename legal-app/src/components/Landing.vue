@@ -10,12 +10,11 @@
               <v-icon x-large class="blue--text text--lighten-2">announcement</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
-              <div class="headline text-xs-center">Option 1</div>
+              <div class="headline text-xs-center">Talk to your employer</div>
             </v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
-              Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-              Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+              
             </v-card-text>
           </v-card>
         </v-flex>
@@ -23,15 +22,18 @@
         <v-flex xs12 md4>
           <v-card class="elevation-0 transparent">
             <v-card-text class="text-xs-center">
-              <v-icon x-large class="blue--text text--lighten-2">account_balance</v-icon>
+              <v-icon x-large class="blue--text text--lighten-2">supervisor_account</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
-              <div class="headline">Option 2</div>
+              <div class="headline">Get a mediator</div>
             </v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
-              Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-              Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+              <div class="time-container">
+                <v-icon x-large class="grey--text text--darken-3">alarm</v-icon> 
+                <span class="time">Takes up to</span>
+                <span class="time actual-time">10 weeks</span>
+              </div>
             </v-card-text>
           </v-card>
         </v-flex>
@@ -42,23 +44,17 @@
               <v-icon x-large class="blue--text text--lighten-2">assignment</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
-              <div class="headline text-xs-center">Option 3</div>
+              <div class="headline text-xs-center">Send a formal letter</div>
             </v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
-              <div class="before-start">
-                <p class="time">Before you start, you need:</p>
-                <p>Document 1</p>
-                <p>Document 2</p>
-                <p>Document 3</p>
-              </div>
-              <v-divider></v-divider>
               <div class="time-container">
                 <v-icon x-large class="grey--text text--darken-3">alarm</v-icon> 
-                <span class="time">This takes about</span>
-                <span class="time actual-time">2 minutes</span>
+                <span class="time">Take up to</span>
+                <span class="time actual-time">10 days</span>
               </div>
             </v-card-text>
-            <v-card-actions>
+            <v-card-actions class="justify-center">
               <v-btn color="primary" v-on:click="hideLanding">Get Started</v-btn>
             </v-card-actions>
           </v-card>

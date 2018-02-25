@@ -23,8 +23,7 @@
           <v-btn flat @click.native="introduction = true">Cancel</v-btn>
 
           <v-stepper-step step="1" :complete="step_no > 1">
-            Select an app
-            <small>Summarize if needed</small>
+            Your options
           </v-stepper-step>
           <v-stepper-content step="1">
             <!-- START -->
@@ -38,20 +37,27 @@
                           <v-icon x-large class="blue--text text--lighten-2">face</v-icon>
                         </v-card-text>
                         <v-card-title primary-title class="layout justify-center">
-                          <div class="headline">DIY</div>
+                          <div class="headline">Do It Yourself</div>
                         </v-card-title>
                         <v-card-text>
-                          Try to work it out with your employer yourself.
-                          <p>Pros:</p>
+                          <p class="text-xs-center">Try to work it out with your employer yourself.</p>
+                          
+                          <v-layout row wrap>
+                            <v-flex xs6 class="text-xs-center">
+                              <p><strong>Pros</strong></p>
+                              <p>Cheaper</p>
+                              <p>Quicker</p>
+                              <p>Less paperwork</p>
+                            </v-flex>
 
-                          <ul>
-                            <li></li>
-                          </ul>
-
-                          <p>Cons:</p>
+                            <v-flex xs6 class="text-xs-center">
+                              <p><strong>Cons</strong></p>
+                            </v-flex>
+                          </v-layout>
+                          
                         </v-card-text>
-                        <v-card-actions>
-                          <v-btn color="primary" @click.native="step_no = 2">Start</v-btn>
+                        <v-card-actions class="justify-center">
+                          <v-btn color="primary" large @click.native="step_no = 2">Start</v-btn>
                         </v-card-actions>
                       </v-card>
                     </v-flex>
@@ -62,13 +68,29 @@
                           <v-icon x-large class="blue--text text--lighten-2">account_balance</v-icon>
                         </v-card-text>
                         <v-card-title primary-title class="layout justify-center">
-                          <div class="headline">Go to Court</div>
+                          <div class="headline">Go to Small Claims Court</div>
                         </v-card-title>
                         <v-card-text>
-                          If you can’t work it out with your employer you may need to go to court. There are a few things you need to consider first.
+                          <p class="text-xs-center">If you can’t work it out with your employer you may need to go to court.</p>
+
+                          <v-layout row wrap>
+                            <v-flex xs6 class="text-xs-center">
+                              <p><strong>Pros</strong></p>
+                              <p>Fairness</p>
+                              <p>Finality</p>
+                            </v-flex>
+
+                            <v-flex xs6 class="text-xs-center">
+                              <p><strong>Cons</strong></p>
+                              <p>Legal costs</p>
+                              <p>Stressful</p>
+                              <p>Slow process</p>
+                            </v-flex>
+                          </v-layout>
+
                         </v-card-text>
-                        <v-card-actions>
-                          <v-btn color="primary" @click.native="step_no = 3">Start</v-btn>
+                        <v-card-actions class="justify-center">
+                          <v-btn large color="primary">Start</v-btn>
                         </v-card-actions>
                       </v-card>
                     </v-flex>
@@ -79,17 +101,18 @@
             <!-- END -->
           </v-stepper-content>
 
-          <v-stepper-step step="2" :complete="step_no > 2">Configure analytics for this app</v-stepper-step>
+          <v-stepper-step step="2" :complete="step_no > 2">Next steps</v-stepper-step>
           <v-stepper-content step="2">
             <Landing v-if="landing" :hideLanding="hideLanding"/>
-            <div v-else>
-              <p>form</p>
-            </div>
+            <Form v-else />
             <v-btn flat @click.native="step_no = 1">Previous</v-btn>
             <v-btn color="primary" @click.native="step_no = 3">Next</v-btn>
           </v-stepper-content>
 
-          <v-stepper-step step="3" :complete="step_no > 3">Select an ad format and name ad unit</v-stepper-step>
+          <v-stepper-step step="3" :complete="step_no > 3">
+            Select an ad format and name ad unit
+            <small>Summarize if needed</small>
+          </v-stepper-step>
           <v-stepper-content step="3">
             <v-card color="grey lighten-1" class="mb-5" height="200px">
               Some content goes here
@@ -113,6 +136,7 @@
 
 <script>
   import Landing from '@/components/Landing'
+  import Form from '@/components/formComponents/Form'
 
   export default {
     data () {
@@ -123,7 +147,8 @@
       }
     },
     components: {
-      Landing
+      Landing,
+      Form
     },
     methods: {
       hideLanding() {

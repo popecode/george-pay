@@ -8,8 +8,8 @@
           justify-center
           class="white--text"
         >
-          <div class="subheading mb-3 text-xs-center">Navigating the legal system can seem a little scary. LawBud is here to  demystify the legal system, bust some legal myths and guide you to the help you need.  </div>
-          <h1 class="white--text mb-2 display-1 text-xs-center">To get started, tell me what’s going on</h1>
+          <div class="subheading mb-2 text-xs-center">Navigating the legal system can seem a little scary. LawBud is here to  demystify the legal system, bust some legal myths and guide you to the help you need.  </div>
+          <h1 class="white--text mb-1 display-1 text-xs-center">To get started, tell me what’s going on</h1>
           <div class="search-holder">
             <v-flex row>
               <v-layout class="search-container" align-center row>
@@ -32,76 +32,108 @@
         <v-flex xs12>
           <v-container grid-list-xl>
             <v-layout row wrap align-center>
-              <v-flex xs12 md3>
+              <v-flex xs12 md3 class="action-card">
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">CBD parking fine</div>
                   </v-card-title>
                   <v-card-text>
-                    Current step: Pending review
+                    <v-flex column>
+                    <p>Current step: Send a letter</p>
+                    <p>Next step: Go to court</p>
+                    </v-flex>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="10" height="25" color="success"></v-progress-linear>
-                      <span class="display-3 green--text text--lighten-2">
-                        3
+                      <v-flex>
+                      <span class="green--text text--lighten-2">
+                        20%
+                      </span>
+                      <v-progress-linear class="card-progress-bar" value="20" height="25" color="success"></v-progress-linear>
+                      </v-flex>
+                      <span class="green--text text--lighten-2">
+                        1 files
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
                       </span>
                     </v-layout>
                   </v-card-actions>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md3>
+              <v-flex xs12 md3 class="action-card">
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Youth allowance</div>
                   </v-card-title>
                   <v-card-text>
-                    Current step: Pending review
+                    <v-flex column>
+                    <p>Current step: Send a letter</p>
+                    <p>Next step: Go to court</p>
+                    </v-flex>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
+                      <v-flex>
+                      <span class="green--text text--lighten-2">
+                        90%
+                      </span>
                       <v-progress-linear class="card-progress-bar" value="90" height="25" color="success"></v-progress-linear>
-                      <span class="display-3 green--text text--lighten-2">
-                        3
+                      </v-flex>
+                      <span class="green--text text--lighten-2">
+                        11 files
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
                       </span>
                     </v-layout>
                   </v-card-actions>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md3>
+              <v-flex xs12 md3 class="action-card">
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Pay dispute</div>
+                    <div class="headline text-xs-center">I've been underpaid</div>
                   </v-card-title>
                   <v-card-text>
-                    <router-link to="/">Continue</router-link>
+                    <v-flex column>
+                    <p><router-link to="/">Current step: Send a letter</router-link></p>
+                    <p>Next step: Go to court</p>
+                    </v-flex>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
+                      <v-flex>
+                      <span class="green--text text--lighten-2">
+                        0%
+                      </span>
                       <v-progress-linear class="card-progress-bar" value="0" height="25" color="success"></v-progress-linear>
-                      <span class="display-3 green--text text--lighten-2">
-                        3
+                      </v-flex>
+                      <span class="green--text text--lighten-2">
+                        0 files
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
                       </span>
                     </v-layout>
                   </v-card-actions>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md3>
+              <v-flex xs12 md3 class="action-card">
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Galaxy 7 refund</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis.
+                    <v-flex column>
+                    <p>Current step: Send a letter</p>
+                    <p>Next step: Go to court</p>
+                    </v-flex>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
+                      <v-flex>
+                      <span class="green--text text--lighten-2">
+                        50%
+                      </span>
                       <v-progress-linear class="card-progress-bar" value="50" height="25" color="success"></v-progress-linear>
-                      <span class="display-3 green--text text--lighten-2">
-                        3
+                      </v-flex>
+                      <span class="green--text text--lighten-2">
+                        3 files
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
                       </span>
                     </v-layout>
@@ -211,7 +243,7 @@
         placeholderTextLetterIndex: 0,
         placeholderArray: [
           "I've been fined",
-          "I have a neighbour dispute",
+          "I have a dispute with a neighbour",
           "I have an insurance claim",
           "I have a rent dispute",
           "I have issues with my 457 visa"
@@ -287,7 +319,10 @@
     margin-right: 50px;
   }
   .attachment-icon {
-    font-size: 60px;
+    font-size: 70px;
     padding-bottom: 8px;
+  }
+  .action-card {
+    min-height: 400px;
   }
 </style>

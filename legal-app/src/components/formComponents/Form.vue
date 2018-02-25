@@ -126,7 +126,7 @@
         <v-layout column v-if="step > 6">
             <v-container v-if="generating">
                 <div class="generating">
-                    <span class="display-1 question-text">Generating...</span>
+                    <span class="subheading text-xs-center question-text">LawBud is generating your letter and supporting documents... hold tight!</span>
                     <v-progress-circular indeterminate :size="50" color="primary"></v-progress-circular>
                 </div>
             </v-container>
@@ -180,7 +180,7 @@ export default {
 
             setTimeout(function() {
                 this.setGenerate(false);
-            }.bind(this), 3000)
+            }.bind(this), 5000)
         },
         setGenerate(newVal) {
             this.generating = newVal;

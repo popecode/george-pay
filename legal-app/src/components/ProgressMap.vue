@@ -121,6 +121,11 @@
             Going to court
             <small>What to bring・What to wear・When to arrive・Courtroom virtual tour</small>
           </v-stepper-step>
+          <v-stepper-content step="3">
+            <v-slide-y-transition mode="out-in">
+              <router-link to="/home">Go to Dashboard</router-link>
+            </v-slide-y-transition>
+          </v-stepper-content>
 
           <v-stepper-step step="4" :complete="step_no > 4">
             Prepare your court claim

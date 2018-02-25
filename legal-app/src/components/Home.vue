@@ -33,12 +33,29 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Underpayment</div>
+                    <div class="headline text-xs-center">Fines</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                    Current step: Pending review
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-layout class="card-status-icons" row justify-space-between align-center>
+                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
+                      <span class="display-3 green--text text--lighten-2">
+                        3
+                        <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
+                      </span>
+                    </v-layout>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 md3>
+                <v-card class="elevation-3 transparent">
+                  <v-card-title primary-title class="layout justify-center">
+                    <div class="headline text-xs-center">Centrelink</div>
+                  </v-card-title>
+                  <v-card-text>
+                    Current step: Pending review
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
@@ -57,9 +74,7 @@
                     <div class="headline text-xs-center">Underpayment</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                    <router-link to="/">Start</router-link>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
@@ -75,33 +90,10 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Underpayment</div>
+                    <div class="headline text-xs-center">Refunds</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
-                      <span class="display-3 green--text text--lighten-2">
-                        3
-                        <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
-                      </span>
-                    </v-layout>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 md3>
-                <v-card class="elevation-3 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Underpayment</div>
-                  </v-card-title>
-                  <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                    Cras facilisis mi vitae nunc lobortis pharetra.
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>

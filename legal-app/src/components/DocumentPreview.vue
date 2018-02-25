@@ -1,7 +1,7 @@
 <template>
   <v-expansion-panel>
     <v-expansion-panel-content>
-      <div slot="header">Document preview</div>
+      <div slot="header">Your Personalised Letter to Employer</div>
       <v-card>
         <v-card-text class="document-content">
 <p><strong>

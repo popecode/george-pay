@@ -131,10 +131,12 @@
                 </div>
             </v-container>
             <v-container v-else>
-                DONE
-                <v-flex>
-                    <v-btn color="primary" v-on:click="nextStep">Save to profile</v-btn>
+                <v-flex xs6 class="my-margin">
+                  <DocumentPreview />  
+                </v-flex>
+                <v-flex class="my-margin">
                     <v-btn>Send to E-Mail</v-btn>
+                    <v-btn color="primary" v-on:click="nextStep">Save to profile</v-btn>
                 </v-flex>
             </v-container>
         </v-layout>
@@ -144,6 +146,7 @@
 
 <script>
 import NextButton from '@/components/formComponents/NextButton'
+import DocumentPreview from '@/components/DocumentPreview'
 
 export default {
     data() {
@@ -169,7 +172,8 @@ export default {
         'nextStep'
     ],
     components: {
-        NextButton
+        NextButton,
+        DocumentPreview
     },
     methods: {
         nextClicked() {
@@ -231,5 +235,9 @@ export default {
 
     .generating .question-text {
         margin-bottom: 20px;
+    }
+
+    .my-margin {
+        margin-top: 20px;
     }
 </style>

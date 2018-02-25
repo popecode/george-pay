@@ -24,7 +24,7 @@
           <v-btn flat @click.native="introduction = true">Cancel</v-btn>
 
           <v-stepper-step step="1" :complete="step_no > 1">
-            Your options
+            Know your options
           </v-stepper-step>
           <v-stepper-content step="1">
             <!-- START -->
@@ -106,7 +106,7 @@
             <!-- END -->
           </v-stepper-content>
 
-          <v-stepper-step step="2" :complete="step_no > 2">Next steps</v-stepper-step>
+          <v-stepper-step step="2" :complete="step_no > 2">DIY</v-stepper-step>
           <v-stepper-content step="2">
             <v-slide-y-transition mode="out-in" v-if="landing">
               <Landing :hideLanding="hideLanding"/>
@@ -119,24 +119,33 @@
 
           <v-stepper-step step="3" :complete="step_no > 3">
             Going to court
-          </v-stepper-step>
-          <v-stepper-content step="3">
-            <v-card color="grey lighten-1" class="mb-5" height="200px">
-              Some content goes here
-            </v-card>
-            <v-btn flat @click.native="step_no = 2">Previous</v-btn>
-            <v-btn color="primary" @click.native="step_no = 4">Next</v-btn>
-          </v-stepper-content>
-
-          <v-stepper-step step="4" :complete="step_no > 4">
-            Preparing for court
             <small>What to bring・What to wear・When to arrive・Courtroom virtual tour</small>
           </v-stepper-step>
-          <v-stepper-content step="4">
-            <v-card color="grey lighten-1" class="mb-5" height="200px"></v-card>
-            <v-btn flat @click.native="step_no = 3">Previous</v-btn>
-            <v-btn color="primary" @click.native="step_no = 5">Next</v-btn>
-          </v-stepper-content>
+
+          <v-stepper-step step="4" :complete="step_no > 4">
+            Prepare your court claim
+            <small>Check evidence・Check entitlement・Calculate your claim</small>
+          </v-stepper-step>
+
+          <v-stepper-step step="5" :complete="step_no > 5">
+            Lodge your application
+          </v-stepper-step>
+
+          <v-stepper-step step="6" :complete="step_no > 6">
+            Serve your employer
+          </v-stepper-step>
+
+          <v-stepper-step step="7" :complete="step_no > 7">
+            Your day in court
+          </v-stepper-step>
+
+          <v-stepper-step step="8" :complete="step_no > 8">
+            Participate in the hearing
+          </v-stepper-step>
+
+          <v-stepper-step step="9" :complete="step_no > 9">
+            Enforce your order
+          </v-stepper-step>
 
         </v-stepper>
       

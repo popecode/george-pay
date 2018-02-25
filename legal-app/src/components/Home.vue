@@ -10,11 +10,13 @@
         >
           <div class="subheading mb-3 text-xs-center">Navigating the legal system can seem a little scary. LawBud is here to  demystify the legal system, bust some legal myths and guide you to the help you need.  </div>
           <h1 class="white--text mb-2 display-1 text-xs-center">To get started, tell me what’s going on</h1>
-          <div>
-            <v-layout class="search-container" row>
-              <v-icon class="search-icon" x-large>search</v-icon>
-              <input type="search" class="search" :placeholder="placeholderText" />
-            </v-layout>
+          <div class="search-holder">
+            <v-flex row>
+              <v-layout class="search-container" align-center row>
+                <v-icon class="search-icon" x-large>search</v-icon>
+                <input type="search" class="search" :placeholder="placeholderText" />
+              </v-layout>
+            </v-flex>
           </div>
         </v-layout>
       </v-parallax>
@@ -40,7 +42,7 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
+                      <v-progress-linear class="card-progress-bar" value="10" height="25" color="success"></v-progress-linear>
                       <span class="display-3 green--text text--lighten-2">
                         3
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
@@ -59,7 +61,7 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
+                      <v-progress-linear class="card-progress-bar" value="90" height="25" color="success"></v-progress-linear>
                       <span class="display-3 green--text text--lighten-2">
                         3
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
@@ -78,7 +80,7 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
+                      <v-progress-linear class="card-progress-bar" value="0" height="25" color="success"></v-progress-linear>
                       <span class="display-3 green--text text--lighten-2">
                         3
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
@@ -97,7 +99,7 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
-                      <v-progress-linear class="card-progress-bar" value="50" height="40" color="success"></v-progress-linear>
+                      <v-progress-linear class="card-progress-bar" value="50" height="25" color="success"></v-progress-linear>
                       <span class="display-3 green--text text--lighten-2">
                         3
                         <v-icon class="green--text text--light-2 attachment-icon">insert_drive_file</v-icon>
@@ -208,9 +210,11 @@
         placeholderArrayIndex: 0,
         placeholderTextLetterIndex: 0,
         placeholderArray: [
-          "I've been underpaid",
-          "Placeholder number two",
-          "Placeholder number three",
+          "I've been fined",
+          "I have a neighbour dispute",
+          "I have an insurance claim",
+          "I have a rent dispute",
+          "I have issues with my 457 visa"
         ],
         placeholderComplete: false
       }
@@ -252,6 +256,11 @@
 <style scoped>
   .search-container {
     position: relative;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .search-holder {
+    width: 100%;
   }
   .search {
     background: #fbfbfb;
@@ -262,6 +271,7 @@
     padding-bottom: 8px;
     padding-left: 50px;
     margin-top: 15px;
+    width: 100%;
   }
   .search-icon {
     position: absolute;
@@ -274,6 +284,7 @@
   }
   .card-progress-bar {
     width: 150px;
+    margin-right: 50px;
   }
   .attachment-icon {
     font-size: 60px;

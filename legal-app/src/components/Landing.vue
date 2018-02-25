@@ -7,7 +7,7 @@
         <v-flex xs12 md4>
           <v-card class="elevation-0">
             <v-card-text class="text-xs-center">
-              <v-icon x-large class="blue--text text--lighten-2">announcement</v-icon>
+              <v-icon x-large class="grey--text">announcement</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
               <div class="headline text-xs-center">Talk to your employer</div>
@@ -22,7 +22,7 @@
         <v-flex xs12 md4>
           <v-card class="elevation-0 transparent">
             <v-card-text class="text-xs-center">
-              <v-icon x-large class="blue--text text--lighten-2">supervisor_account</v-icon>
+              <v-icon x-large class="grey--text">supervisor_account</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
               <div class="headline">Get a mediator</div>
@@ -41,7 +41,7 @@
         <v-flex xs12 md4>
           <v-card class="elevation-0 transparent">
             <v-card-text class="text-xs-center">
-              <v-icon x-large class="blue--text text--lighten-2">assignment</v-icon>
+              <v-icon x-large class="grey--text">assignment</v-icon>
             </v-card-text>
             <v-card-title primary-title class="layout justify-center">
               <div class="headline text-xs-center">Send a formal letter</div>

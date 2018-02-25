@@ -8,6 +8,7 @@
             align-center
             justify-center
             class="grey--text">
+            <v-icon x-large class="green--text text--lighten-2">attach_money</v-icon>
             <h1 class="grey--text text--darken-2 mb-2 display-2 text-xs-center">So you think you’ve been underpaid?</h1>
             <div class="mb-3 text-xs-center text--darken-2 headline">
               You’ve come to the right place. It's easy to get started!
@@ -34,24 +35,27 @@
                     <v-flex xs6>
                       <v-card class="elevation-0 transparent">
                         <v-card-text class="text-xs-center">
-                          <v-icon x-large class="blue--text text--lighten-2">face</v-icon>
+                          <v-icon x-large class="grey--text">face</v-icon>
                         </v-card-text>
                         <v-card-title primary-title class="layout justify-center">
-                          <div class="headline">Do It Yourself</div>
+                          <div class="headline">1. Do It Yourself</div>
                         </v-card-title>
+                        <v-divider></v-divider>
                         <v-card-text>
                           <p class="text-xs-center">Try to work it out with your employer yourself.</p>
                           
                           <v-layout row wrap>
                             <v-flex xs6 class="text-xs-center">
-                              <p><strong>Pros</strong></p>
-                              <p>Cheaper</p>
+                              <p class="subheading"><strong>Pros</strong></p>
                               <p>Quicker</p>
+                              <p>Cheaper</p>
                               <p>Less paperwork</p>
                             </v-flex>
 
                             <v-flex xs6 class="text-xs-center">
-                              <p><strong>Cons</strong></p>
+                              <p class="subheading"><strong>Cons</strong></p>
+                              <p>Reluctant employer</p>
+                              <p>No offical ruling</p>
                             </v-flex>
                           </v-layout>
                           
@@ -65,23 +69,24 @@
                     <v-flex xs6>
                       <v-card class="elevation-0 transparent">
                         <v-card-text class="text-xs-center">
-                          <v-icon x-large class="blue--text text--lighten-2">account_balance</v-icon>
+                          <v-icon x-large class="grey--text">account_balance</v-icon>
                         </v-card-text>
                         <v-card-title primary-title class="layout justify-center">
-                          <div class="headline">Go to Small Claims Court</div>
+                          <div class="headline">2. Go to Small Claims Court</div>
                         </v-card-title>
+                        <v-divider></v-divider>
                         <v-card-text>
                           <p class="text-xs-center">If you can’t work it out with your employer you may need to go to court.</p>
 
                           <v-layout row wrap>
                             <v-flex xs6 class="text-xs-center">
-                              <p><strong>Pros</strong></p>
+                              <p class="subheading"><strong>Pros</strong></p>
                               <p>Fairness</p>
                               <p>Finality</p>
                             </v-flex>
 
                             <v-flex xs6 class="text-xs-center">
-                              <p><strong>Cons</strong></p>
+                              <p class="subheading"><strong>Cons</strong></p>
                               <p>Legal costs</p>
                               <p>Stressful</p>
                               <p>Slow process</p>
@@ -162,6 +167,10 @@
 </script>
 
 <style>
+  .parallax__content .icon {
+    font-size: 70px !important;
+  }
+
   .stepper__step__step {
     height: 40px;
     width: 40px;

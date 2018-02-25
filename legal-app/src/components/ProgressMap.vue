@@ -113,7 +113,7 @@
             </v-slide-y-transition>
             
             <v-slide-y-transition mode="out-in" v-else>
-              <Form :showLanding="showLanding" />
+              <Form :showLanding="showLanding" :nextStep="nextStep" />
             </v-slide-y-transition>
           </v-stepper-content>
 
@@ -167,6 +167,9 @@
       showLanding() {
         console.warn('here');
         this.landing = true;
+      },
+      nextStep() {
+        this.step_no = 3
       }
     }
   }

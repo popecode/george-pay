@@ -126,12 +126,16 @@
         <v-layout column v-if="step > 6">
             <v-container v-if="generating">
                 <div class="generating">
-                    <span class="subheading text-xs-center question-text">LawBud is generating your letter and supporting documents... hold tight!</span>
+                    <span class="subheading text-xs-center question-text">LawBud is just writing your letter and supporting documents... hold tight!</span>
                     <v-progress-circular indeterminate :size="50" color="primary"></v-progress-circular>
                 </div>
             </v-container>
             <v-container v-else>
                 DONE
+                <v-flex>
+                    <v-btn color="primary" v-on:click="nextStep">Save to profile</v-btn>
+                    <v-btn>Send to E-Mail</v-btn>
+                </v-flex>
             </v-container>
         </v-layout>
 
@@ -161,7 +165,8 @@ export default {
         }
     },
     props: [
-        'showLanding'
+        'showLanding',
+        'nextStep'
     ],
     components: {
         NextButton

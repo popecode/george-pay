@@ -15,6 +15,11 @@
             <v-divider></v-divider>
             <v-card-text>
               <p>Have a conversation with your employer to resolve the issue. We offer free advice that you can use to prepare.</p>
+              <div class="time-container">
+                <v-icon x-large class="grey--text text--darken-3">alarm</v-icon> 
+                <span class="time">Takes up to</span>
+                <span class="time actual-time">Forever</span>
+              </div>
             </v-card-text>
             <v-card-actions class="justify-center">
               <v-btn color="primary">Get some advice</v-btn>

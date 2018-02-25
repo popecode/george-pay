@@ -39,8 +39,8 @@
                   </v-card-title>
                   <v-card-text>
                     <v-flex column>
-                    <p>Current step: Send a letter</p>
-                    <p>Next step: Go to court</p>
+                    <p><strong>Current step:</strong> Send a letter</p>
+                    <p><strong>Next step</strong>: Go to court</p>
                     </v-flex>
                   </v-card-text>
                   <v-card-actions>
@@ -66,8 +66,8 @@
                   </v-card-title>
                   <v-card-text>
                     <v-flex column>
-                    <p>Current step: Send a letter</p>
-                    <p>Next step: Go to court</p>
+                    <p><strong>Current step:</strong> Send a letter</p>
+                    <p><strong>Next step</strong>: Go to court</p>
                     </v-flex>
                   </v-card-text>
                   <v-card-actions>
@@ -93,8 +93,8 @@
                   </v-card-title>
                   <v-card-text>
                     <v-flex column>
-                    <p><router-link to="/">Current step: Send a letter</router-link></p>
-                    <p>Next step: Go to court</p>
+                    <p><router-link to="/"><strong>Current step:</strong> Send a letter</router-link></p>
+                    <p><strong>Next step</strong>: Go to court</p>
                     </v-flex>
                   </v-card-text>
                   <v-card-actions>
@@ -120,8 +120,8 @@
                   </v-card-title>
                   <v-card-text>
                     <v-flex column>
-                    <p>Current step: Send a letter</p>
-                    <p>Next step: Go to court</p>
+                    <p><strong>Current step:</strong> Send a letter</p>
+                    <p><strong>Next step</strong>: Go to court</p>
                     </v-flex>
                   </v-card-text>
                   <v-card-actions>

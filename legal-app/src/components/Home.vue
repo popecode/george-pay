@@ -33,7 +33,7 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Fines</div>
+                    <div class="headline text-xs-center">CBD parking fine</div>
                   </v-card-title>
                   <v-card-text>
                     Current step: Pending review
@@ -52,7 +52,7 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Centrelink</div>
+                    <div class="headline text-xs-center">Youth allowance</div>
                   </v-card-title>
                   <v-card-text>
                     Current step: Pending review
@@ -71,10 +71,10 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Underpayment</div>
+                    <div class="headline text-xs-center">Pay dispute</div>
                   </v-card-title>
                   <v-card-text>
-                    <router-link to="/">Start</router-link>
+                    <router-link to="/">Continue</router-link>
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
@@ -90,10 +90,10 @@
               <v-flex xs12 md3>
                 <v-card class="elevation-3 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Refunds</div>
+                    <div class="headline text-xs-center">Galaxy 7 refund</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra.
+                    Cras facilisis mi vitae nunc lobortis.
                   </v-card-text>
                   <v-card-actions>
                     <v-layout class="card-status-icons" row justify-space-between align-center>
